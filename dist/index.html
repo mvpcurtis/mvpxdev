@@ -6,41 +6,56 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Welcome MVP</title>
   </head>
-  <body class="relative">
+  <body>
+    <!-- GOD RAYS -->
+    <!-- <div class="absolute z-20 top-0 inset-x-0 flex justify-center overflow-hidden pointer-events-none">
+      <div class="w-[108rem] flex-none flex justify-end">
+        <picture
+          ><source srcset="https://tailwindcss.com/_next/static/media/docs@30.8b9a76a2.avif" type="image/avif" />
+          <img src="https://tailwindcss.com/_next/static/media/docs@tinypng.d9e4dcdc.png" alt="" class="w-[71.75rem] flex-none max-w-none dark:hidden" decoding="async" /></picture
+        ><picture
+          ><source srcset="https://tailwindcss.com/_next/static/media/docs-dark@30.1a9f8cbf.avif" type="image/avif" />
+          <img src="https://tailwindcss.com/_next/static/media/docs-dark@tinypng.1bbe175e.png" alt="" class="w-[90rem] flex-none max-w-none hidden dark:block" decoding="async"
+        /></picture>
+      </div>
+    </div> -->
+    <!-- SECTION: NAVIGATION BAR -->
     <nav class="fixed border-b border-gray-200 border-opacity-20 top-0 z-40 w-full backdrop-blur flex-none transition-colors duration-500">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-6">
         <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
           <!-- <img src="assets/images/logo.svg" class="h-8 hidden md:inline-block" /> -->
-          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">mvpxdev</span>
+          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white hover:text-indigo-500 duration-100">mvpxdev</span>
         </a>
+        <!-- BURGER MENU -->
         <button id="toggle-navbar" data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
           <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
           </svg>
         </button>
+        <!-- NAVIGATION LINKS -->
         <div class="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0">
             <li>
-              <a href="#portfolio" class="block py-2 px-3 text-white bg-indigo-600 rounded md:bg-transparent md:p-0 md:dark:text-indigo-500" aria-current="page">Portfolio</a>
+              <a href="#portfolio" class="block py-2 px-3 text-indigo-500 rounded md:bg-transparent md:p-0 duration-100">Portfolio</a>
             </li>
             <li>
-              <a href="#aboutme" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About Me</a>
+              <a href="#aboutme" class="block py-2 px-3 text-white rounded md:p-0 hover:text-indigo-500 duration-100">About Me</a>
             </li>
             <li>
-              <a href="#services" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+              <a href="#services" class="block py-2 px-3 text-white rounded md:p-0 hover:text-indigo-500 duration-100">Services</a>
             </li>
             <li>
-              <a href="#blog" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Blog</a>
+              <a href="#blog" class="block py-2 px-3 text-white rounded md:p-0 hover:text-indigo-500 duration-100">Blog</a>
             </li>
             <li>
-              <a href="#contactme" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact Me</a>
+              <a href="#contactme" class="block py-2 px-3 text-white rounded md:p-0 hover:text-indigo-500 duration-100">Contact Me</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-
+    <!-- SECTION: HEADER -->
     <header class="bg-gray-900 py-36">
       <div class="max-w-screen-xl text-center p-4 md:py-16 mx-auto border border-gray-800 rounded">
         <h2 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Hey there 👋</h2>
@@ -52,6 +67,7 @@
           </span>
           and I'll be your host tonight! Please take a few minutes to have a look around and discover where my passion lies...
         </p>
+        <!-- SEO TAGS -->
         <h1 class="mb-8 text-xs font-normal text-gray-500 lg:text-sm sm:px-16 xl:px-48 dark:text-gray-400">#web design #web development #seo #search engine optimization #tailwind #tailwindcss #bootstrap #git #github #html #css #javascript #js #latest</h1>
         <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
           <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
@@ -136,7 +152,7 @@
           <img class="w-full p-2 md:w-1/2" src="https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29kZXxlbnwwfHwwfHx8MA%3D%3D" alt="code" />
         </div>
         <!-- ROW/COLUMN REVERSE -->
-        <div class="border border-gray-700 rounded flex flex-col-reverse p-4 item-center justify-center md:flex-row md:justify-between md:text-left">
+        <div class="my-10 border border-gray-700 rounded flex flex-col-reverse p-4 item-center justify-center md:flex-row md:justify-between md:text-left">
           <img class="w-full p-2 md:w-1/2" src="https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29kZXxlbnwwfHwwfHx8MA%3D%3D" alt="code" />
           <div class="w-full flex flex-col item-center justify-center md:w-1/2 md:pl-16">
             <h3 class="text-white text-2xl font-bold tracking-tight leading-none md:text-3xl lg:text-4xl md:self-start">BWR</h3>
@@ -165,6 +181,134 @@
       <div class="max-w-screen-xl mx-auto px-4 text-center">
         <h2 class="text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl text-white">Services</h2>
         <p class="mb-16 border-r inline-block w-1/3 border-b p-4 border-gray-300 rounded-xl text-lg font-normal text-gray-300">Here's some of the things I can offer you.</p>
+        <div class="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+          <div class="rounded-3xl p-8 ring-1 xl:p-10 bg-indigo-500 ring-indigo-500">
+            <h3 id="tier-freelancer" class="text-lg font-semibold leading-8 text-white">Purple Package</h3>
+            <p class="mt-4 text-sm leading-6 text-gray-400">My purple package works on a per-hour basis. If you need anything editing on your current website then this is the best solution for you.</p>
+            <p class="mt-6 flex items-baseline gap-x-1">
+              <!-- Price, update based on frequency toggle state -->
+              <span class="text-4xl font-bold tracking-tight text-indigo-500">£40</span>
+              <!-- Payment frequency, update based on frequency toggle state -->
+              <span class="text-sm font-semibold leading-6 text-white">/hour</span>
+            </p>
+            <a href="#" aria-describedby="tier-freelancer" class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-indigo-400 text-gray-600 shadow-sm hover:bg-red-500 focus-visible:outline-orange-600">Buy plan</a>
+            <ul role="list" class="mt-8 space-y-3 text-sm leading-6 xl:mt-10 text-gray-400">
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-yellow-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                5 products
+              </li>
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-green-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                Up to 1,000 subscribers
+              </li>
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-blue-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                Basic analytics
+              </li>
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-teal-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                48-hour support response time
+              </li>
+            </ul>
+          </div>
+          <div class="rounded-3xl p-8 ring-1 xl:p-10 bg-red-500 ring-red-500">
+            <h3 id="tier-startup" class="text-lg font-semibold leading-8 text-white">Red Package</h3>
+            <p class="mt-4 text-sm leading-6 text-cyan-600">A plan that scales with your rapidly growing business.</p>
+            <p class="mt-6 flex items-baseline gap-x-1">
+              <!-- Price, update based on frequency toggle state -->
+              <span class="text-4xl font-bold tracking-tight text-yellow-700">$30</span>
+              <!-- Payment frequency, update based on frequency toggle state -->
+              <span class="text-sm font-semibold leading-6 text-teal-600">/month</span>
+            </p>
+            <a href="#" aria-describedby="tier-startup" class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-green-600 text-white shadow-sm hover:bg-green-800 focus-visible:outline-red-600">Buy plan</a>
+            <ul role="list" class="mt-8 space-y-3 text-sm leading-6 xl:mt-10 text-pink-600">
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-purple-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                25 products
+              </li>
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-yellow-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                Up to 10,000 subscribers
+              </li>
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-red-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                Advanced analytics
+              </li>
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-blue-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                24-hour support response time
+              </li>
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-orange-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                Marketing automations
+              </li>
+            </ul>
+          </div>
+          <div class="rounded-3xl p-8 ring-1 xl:p-10 bg-gray-900 ring-gray-900">
+            <h3 id="tier-enterprise" class="text-lg font-semibold leading-8 text-white">Black Package</h3>
+            <p class="mt-4 text-sm leading-6 text-gray-300">Dedicated support and infrastructure for your company.</p>
+            <p class="mt-6 flex items-baseline gap-x-1">
+              <span class="text-4xl font-bold tracking-tight text-white">Custom</span>
+            </p>
+            <a href="#" aria-describedby="tier-enterprise" class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-gray-900 text-white hover:bg-white/20 focus-visible:outline-white">Contact sales</a>
+            <ul role="list" class="mt-8 space-y-3 text-sm leading-6 xl:mt-10 text-gray-300">
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                Unlimited products
+              </li>
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                Unlimited subscribers
+              </li>
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                Advanced analytics
+              </li>
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                1-hour, dedicated support response time
+              </li>
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                Marketing automations
+              </li>
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                Custom reporting tools
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
     <!-- SECTION: BLOG -->
@@ -180,20 +324,23 @@
         <h2 class="text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl text-white">Contact Me</h2>
         <p class="mb-16 border-r inline-block w-1/3 border-b p-4 border-white rounded-xl text-lg font-normal text-white lg:text-xl">Get in touch and let's work together!</p>
         <div class="flex flex-col justify-center items-center md:flex-row md:justify-between">
-          <p class="hidden text-white w-1/2 text-2xl font-bold md:block md:text-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, nobis.</p>
+          <div class="hidden w-1/2 md:block md:text-right">
+            <h3 class="text-white text-3xl font-extrabold tracking-tight leading-none">I have just one question.</h3>
+            <p class="text-gray-200 mt-3">Do you need a website? If the answer was yes then what are you waiting for?! Fill out the form to the right and let's make it happen!</p>
+          </div>
           <form action="POST" class="w-1/2 ml-10">
             <ul class="flex flex-col justify-center items-end">
               <li class="flex flex-col items-start my-2 w-full">
                 <label class="text-white font-medium" for="name">Enter your name:</label>
-                <input class="w-full p-3 rounded outline-none" type="text" name="name" id="name" />
+                <input class="w-full p-3 rounded outline-none" type="text" name="name" id="name" placeholder="Harry Potter" />
               </li>
               <li class="flex flex-col items-start my-2 w-full">
                 <label class="text-white font-medium" for="email">Enter your email:</label>
-                <input class="w-full p-3 rounded outline-none" type="text" name="email" id="email" />
+                <input class="w-full p-3 rounded outline-none" type="text" name="email" id="email" placeholder="harry.potter@hogwarts.com" />
               </li>
               <li class="flex flex-col items-start my-2 w-full">
                 <label class="text-white font-medium" for="name">Enter your message:</label>
-                <textarea class="w-full p-3 rounded outline-none" name="message" id="message" cols="30" rows="10"></textarea>
+                <textarea class="w-full p-3 rounded outline-none resize-none" name="message" id="message" cols="30" rows="10" placeholder="I think Snape might be up to no good!"></textarea>
               </li>
               <button class="bg-red-500 text-white px-10 py-3 rounded font-medium">Submit</button>
             </ul>
@@ -222,7 +369,12 @@
             <li>
               <a href="#portfolio" class="block py-2 px-3 text-white md:p-0" aria-current="page">YouTube</a>
             </li>
-            <li class="block py-2 px-3 text-white md:p-0" aria-current="page">Made With <span class="text-red-500">Love</span></li>
+            <li class="block py-2 px-3 text-white md:p-0" aria-current="page">
+              Made With
+              <svg class="inline" height="24" version="1.1" width="24" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                <g transform="translate(0 -1030.4)"><path d="m7 1031.4c-1.5355 0-3.0784 0.5-4.25 1.7-2.3431 2.4-2.2788 6.1 0 8.5l9.25 9.8 9.25-9.8c2.279-2.4 2.343-6.1 0-8.5-2.343-2.3-6.157-2.3-8.5 0l-0.75 0.8-0.75-0.8c-1.172-1.2-2.7145-1.7-4.25-1.7z" fill="#c0392b" /></g>
+              </svg>
+            </li>
           </ul>
         </div>
       </div>
